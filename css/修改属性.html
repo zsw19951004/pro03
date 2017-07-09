@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> new document </title>
+  <meta name="generator" content="editplus" />
+  <meta name="author" content="" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta charset="utf-8">
+ </head>
+
+ <body>
+  <script>
+	"user strict"
+	var emp1={
+		id:1001,
+		name:"lucy",
+		salary:10000
+			}
+	var attrs=Object.getOwnPropertyDescriptor(emp1,"id");
+	Object.defineProperty(emp1,"id",{
+       value:100,
+})
+		
+	console.log(attrs);
+	console.dir(emp1);
+  </script>
+ </body>
+</html>
